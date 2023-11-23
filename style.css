@@ -1,0 +1,201 @@
+
+body {margin: 0;
+  background-color: #ffff;
+}
+
+ul.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 1.2rem;
+  width: 100vw;
+  top:0;
+  background-color: #ffffe2;
+  position: fixed;
+  border: 1.2px solid #fffab4;
+  overflow: auto;
+  box-shadow:0 0.1rem 2.2rem #ffe5be;
+
+}
+ul.sidenav li{
+  display:inline;
+}
+
+ul.sidenav li a {
+
+  color: #fdda3e;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.strip{
+  width:100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.head-1{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FDF868;
+  text-shadow: 1.5px 1.5px #FE8E2F;
+}
+.para{
+  color: rgb(146, 146, 146);
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family:  sans-serif;
+  padding: 1px;
+ /* border-bottom: 1px solid #FE8E2F;*/
+  
+}
+ .column-1{
+  width:50%;
+  display: block;
+ 
+  justify-content: space-between;
+  align-items: center;
+ }
+ .column-2{
+  width:50vw;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+
+ }
+ .high-light{
+  font-weight: 900;
+  font-size: 2rem;
+  color: #FDF868;
+  text-shadow: 1px 3.2px #FE8E2F;
+ }
+ .btn{
+  background: #FDF868;
+   color:#FE8E2F;
+   font-weight: 700;
+   font-size: 18px;
+   border: 1px solid #FDF868;
+   border-radius: 10px;
+   padding: 1rem;
+   box-shadow: 0 1rem 2.5rem #FE8E2F;
+ }
+.content{
+  margin: 3rem;
+  margin-top: 4rem;
+}
+
+.form{
+ padding:3rem;
+}
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #FDF868;
+  color:#FE8E2F;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  box-shadow: 0 1rem 2.5rem #FE8E2F;
+}
+
+/* Style the container */
+.common {
+  border-radius: 5px;
+ 
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-1 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  
+}
+.name{
+  font-size: 1.1rem;
+  font-weight: 600;
+  color:#fff93f;
+}
+/* Floating column for inputs: 75% width */
+.col-2 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  border-color: #FDF868;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer{
+  width:100%;
+  background-color:#FDF868 ;
+}
+footer p{
+  margin:0;
+  text-align: center;
+  color:#fff;
+  line-height:5rem;
+  font-size:1.4rem;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  ul.sidenav {
+    width: 100vw;
+    height: auto;
+    position: relative;
+  }
+  .column-1{
+    width:100vw;
+    display: block;
+    
+  }
+  
+  .column-2{
+    width:100vw;
+    display: block;
+    padding:2px;
+    margin-bottom: 500px;
+  }
+  
+ 
+}
+
+@media screen and (max-width: 400px) {
+  ul.sidenav li a {
+    text-align: center;
+    float: none;
+  }
+}
